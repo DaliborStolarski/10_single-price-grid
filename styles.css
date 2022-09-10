@@ -1,0 +1,176 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+
+*/
+
+body {
+  font-family: 'Karla', sans-serif;
+  padding: 150px 300px;
+}
+
+.row-main {
+  box-shadow: 20px 20px 50px hsl(218, 22%, 67%);
+  border-radius: 10px;
+}
+
+/* container-top */
+
+.col-top {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.col-top h3 {
+  margin: 30px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%)
+}
+
+.col-top h5 {
+  margin: 0 30px;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+}
+
+.col-top p {
+  margin: 15px 30px 40px 30px;
+  color: hsl(218, 22%, 67%);
+}
+
+/* container-bottom-left */
+
+.col-bottom-left {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  border-radius: 0 0 0 10px;
+}
+
+.col-bottom-left h5 {
+  margin: 40px 0 15px 30px;
+  font-weight: 700;
+}
+
+.col-bottom-left p {
+  margin-left: 30px;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+
+.price-day {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price span {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.price p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  opacity: 50%;
+}
+
+.button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  margin: 30px 30px 40px 30px;
+  width: auto;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  width: calc(100% - 62px);
+}
+
+
+/* container-bottom-right */
+
+.col-bottom-right {
+  background-color: hsl(179, 62%, 43%);
+  opacity: 80%;
+  color: white;
+  border-radius: 0 0 10px 0;
+}
+
+.col-bottom-right h5 {
+  margin: 40px 30px 15px 30px;
+  font-weight: 700;
+}
+
+.col-bottom-right p {
+  margin: 0 30px;
+  margin-bottom: 0;
+  font-size: 15px;
+  padding-bottom: 40px;
+  color: hsl(204, 43%, 93%);
+  opacity: 80%;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px)  {
+
+  body {
+    padding: 50px 30px;
+  }
+
+  .col-bottom-left {
+    border-radius: 0;
+  }
+
+  .col-bottom-right {
+    border-radius: 0 0 10px 10px;
+  }
+
+}
